@@ -1,0 +1,36 @@
+{
+    "messages": [
+      {
+        "id": 1,
+        "sender": "John",
+        "content": "Hello!",
+        "timestamp": "2024-06-20T10:00:00Z",
+        "type": "text"
+      },
+      {
+        "id": 2,
+        "sender": "Jane",
+        "content": "Check out this image.",
+        "timestamp": "2024-06-20T10:05:00Z",
+        "type": "image",
+        "url": "https://example.com/image.jpg"
+      },
+      {
+        "id": 3,
+        "sender": "John",
+        "content": "Here is a video.",
+        "timestamp": "2024-06-20T10:10:00Z",
+        "type": "video",
+        "url": "https://example.com/video.mp4"
+      },
+      {
+        "id": 4,
+        "sender": "Jane",
+        "content": "And this PDF.",
+        "timestamp": "2024-06-20T10:15:00Z",
+        "type": "pdf",
+        "url": "https://example.com/document.pdf"
+      }
+    ]
+  }
+  
