@@ -16,6 +16,8 @@ app.get("/messages", (req, res) => {
   res.json(messages);
 });
 
+app.use("/uploads", express.static(path.join(__dirname, "./dokumen")));
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

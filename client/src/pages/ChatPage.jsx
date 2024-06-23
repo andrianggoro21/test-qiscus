@@ -289,10 +289,7 @@ const ChatPage = () => {
         <DrawerOverlay>
           <DrawerContent>
             <DrawerCloseButton />
-            <DrawerHeader
-              bg={colorMode === "light" ? "gray.100" : "gray.900"}
-              p={8}
-            ></DrawerHeader>
+            <DrawerHeader bg={colorMode === "light" ? "gray.100" : "gray.900"} p={8}></DrawerHeader>
             <DrawerBody bg={colorMode === "light" ? "gray.100" : "gray.900"}>
               <Sidebar
                 participants={participants}
