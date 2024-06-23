@@ -1,7 +1,10 @@
-import { Box, Text, Image } from "@chakra-ui/react";
+import { Box, Text, Image, useColorMode } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 
 const Message = ({ message }) => {
+    const { colorMode } = useColorMode();
+  const isSentByCurrentUser = message.sender === "You";
+
   const renderContent = () => {
     switch (message.type) {
       case "text":
@@ -27,7 +30,16 @@ const Message = ({ message }) => {
   };
 
   return (
-    <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={4} m={2}>
+    <Box
+      borderWidth="1px"
+      borderRadius="lg"
+      overflow="hidden"
+      p={4}
+      m={2}
+      bg={isSentByCurrentUser ? (colorMode === "light" ? "green.100" : "green.700") : (colorMode === "light" ? "blue.100" : "blue.700")}
+      alignSelf={isSentByCurrentUser ? "flex-end" : "flex-start"}
+      maxW="70%"
+    >
       <Text fontWeight="bold">{message.sender}</Text>
       {renderContent()}
       <Text fontSize="sm" color="gray.500">
