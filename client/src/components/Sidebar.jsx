@@ -1,7 +1,7 @@
 import { Box, VStack } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 import UserItem from "./UserItem";
-import GroupItem from "./GroupItem"; // Import GroupItem
+import GroupItem from "./GroupItem"; 
 
 const Sidebar = ({ participants, onUserClick, onGroupClick, groups }) => {
   return (
