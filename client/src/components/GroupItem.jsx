@@ -1,7 +1,7 @@
 import { Text, Avatar, Flex, useColorMode } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 
-const UserItem = ({ participant, onClick }) => {
+const GroupItem = ({ group, onClick }) => {
   const { colorMode } = useColorMode();
 
   return (
@@ -16,20 +16,18 @@ const UserItem = ({ participant, onClick }) => {
       _hover={{ bg: colorMode === "light" ? "gray.100" : "gray.600" }}
       onClick={onClick}
     >
-      <Avatar name={participant.name} mr={3} />
-      <Text fontWeight="bold">{participant.name}</Text>
+      <Avatar name={group.name} mr={3} />
+      <Text fontWeight="bold">{group.name}</Text>
     </Flex>
   );
 };
 
-UserItem.propTypes = {
-  participant: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+GroupItem.propTypes = {
+  group: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
-    role: PropTypes.number.isRequired,
   }).isRequired,
   onClick: PropTypes.func.isRequired,
 };
 
-export default UserItem;
-
+export default GroupItem;

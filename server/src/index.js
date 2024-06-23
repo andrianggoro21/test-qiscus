@@ -13,7 +13,7 @@ app.use(express.json());
 const messages = require("./db.json");
 
 app.get("/messages", (req, res) => {
-  res.json(messages.messages);
+  res.json(messages);
 });
 
 app.listen(PORT, () => {
