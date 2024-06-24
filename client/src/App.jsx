@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router-dom";
+import ChatPage from "./pages/ChatPage";
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<div>Hello World</div>} />
+        <Route path="/" element={<ChatPage />} />
       </Routes>
     </>
   );

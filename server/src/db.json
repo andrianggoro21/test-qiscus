@@ -1,0 +1,100 @@
+{
+  "results": {
+    "room": {
+      "name": "Product A",
+      "id": 12456,
+      "image_url": "https://picsum.photos/id/237/200/300",
+      "participant": [
+        {
+          "id": "admin@mail.com",
+          "name": "Admin",
+          "role": 0
+        },
+        {
+          "id": "agent@mail.com",
+          "name": "Agent A",
+          "role": 1
+        },
+        {
+          "id": "customer@mail.com",
+          "name": "king customer",
+          "role": 2
+        }
+      ]
+    },
+    "comments": [
+      {
+        "id": 885512,
+        "type": "text",
+        "message": "Selamat malam",
+        "sender": "customer@mail.com"
+      },
+      {
+        "id": 885513,
+        "type": "text",
+        "message": "Malam",
+        "sender": "agent@mail.com"
+      },
+      {
+        "id": 885514,
+        "type": "text",
+        "message": "Ada yang bisa saya bantu?",
+        "sender": "agent@mail.com"
+      },
+      {
+        "id": 885515,
+        "type": "text",
+        "message": "Saya ingin mengirimkan bukti pembayaran, karena di aplikasi selalu gagal",
+        "sender": "customer@mail.com"
+      },
+      {
+        "id": 885516,
+        "type": "text",
+        "message": "Baik, silahkan kirimkan lampiran bukti pembayarannya",
+        "sender": "agent@mail.com"
+      },
+      {
+        "id": 885517,
+        "type": "image",
+        "message": "bukti-pembayaran.jpg",
+        "sender": "customer@mail.com"
+      },
+      {
+        "id": 885518,
+        "type": "text",
+        "message": "Bukti pembayaran terlampir",
+        "sender": "customer@mail.com"
+      },
+      {
+        "id": 885519,
+        "type": "text",
+        "message": "Baik pembayaran sudah kami terima",
+        "sender": "agent@mail.com"
+      },
+      {
+        "id": 885520,
+        "type": "video",
+        "message": "https://youtu.be/OHpD8X-iJpg?si=kwny5Py8BWdXyJTD",
+        "sender": "agent@mail.com"
+      },
+      {
+        "id": 885521,
+        "type": "text",
+        "message": "berikut video kondisi anjingnya",
+        "sender": "agent@mail.com"
+      },
+      {
+        "id": 885522,
+        "type": "pdf",
+        "message": "perawatan.pdf",
+        "sender": "customer@mail.com"
+      },
+      {
+        "id": 885523,
+        "type": "text",
+        "message": "Berikut dokumen pembelian",
+        "sender": "customer@mail.com"
+      }
+    ]
+  }
+}
